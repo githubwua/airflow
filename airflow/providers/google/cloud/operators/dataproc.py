@@ -583,7 +583,8 @@ class DataprocCreateClusterOperator(GoogleCloudBaseOperator):
         values to parameter of DataprocCreateCluster operator.
     :param cluster_config: Required. The cluster config to create.
         If a dict is provided, it must be of the same form as the protobuf message
-        :class:`~google.cloud.dataproc_v1.types.ClusterConfig`
+        :class:`~google.cloud.dataproc_v1.types.ClusterConfig`,
+        which cab be created using make() of ClusterGenerator
     :param virtual_cluster_config: Optional. The virtual cluster config, used when creating a Dataproc
         cluster that does not directly control the underlying compute resources, for example, when creating a
         `Dataproc-on-GKE cluster
