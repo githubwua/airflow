@@ -1286,7 +1286,8 @@ class DataprocAsyncHook(GoogleBaseHook):
         :param labels: Labels that will be assigned to created cluster.
         :param cluster_config: The cluster config to create. If a dict is
             provided, it must be of the same form as the protobuf message
-            :class:`~google.cloud.dataproc_v1.types.ClusterConfig`.
+            :class:`~google.cloud.dataproc_v1.types.ClusterConfig`,
+            which can be created using make() of ClusterGenerator
         :param virtual_cluster_config: The virtual cluster config, used when
             creating a Dataproc cluster that does not directly control the
             underlying compute resources, for example, when creating a
